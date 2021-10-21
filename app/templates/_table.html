@@ -1,0 +1,22 @@
+<!--table valign="top"-->
+<!--<table class="table table-hover">-->
+
+  {% if post.user_id == 5 %}
+  <tr class="bg-warning">
+  {% else %}
+  <tr>
+  {% endif %}
+    <td width="30px">
+		{{ post.id }}
+    </td>
+    <td width="30px">
+		{{ post.body }}
+    </td>
+	<td width="30px">
+		{{ post.timestamp }}
+    </td>
+	<td width="30px">
+		{{ post.user_id }}
+    </td>
+  </tr>
+<!--</table>-->

@@ -1,0 +1,152 @@
+2021-10-14 10:25:12,945 ERROR: Exception on /upload [GET] [in d:\py\vd\lib\site-packages\flask\app.py:1454]
+Traceback (most recent call last):
+  File "d:\py\vd\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "d:\py\vd\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "d:\py\vd\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "d:\py\vd\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "D:\py\vD\app\routes.py", line 236, in uploaddd
+    files = os.listdir(app.config['UPLOAD_PATH'])
+FileNotFoundError: [WinError 3] Системе не удается найти указанный путь: 'static'
+2021-10-14 10:38:17,218 ERROR: Exception on /upload [GET] [in d:\py\vd\lib\site-packages\flask\app.py:1454]
+Traceback (most recent call last):
+  File "d:\py\vd\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "d:\py\vd\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "d:\py\vd\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "d:\py\vd\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "D:\py\vD\app\routes.py", line 236, in uploaddd
+    files = os.listdir(app.config['UPLOAD_PATH'])
+FileNotFoundError: [WinError 3] Системе не удается найти указанный путь: 'static'
+2021-10-14 10:46:20,495 INFO: Microblog startup [in D:\py\vD\app\__init__.py:57]
+2021-10-14 10:46:26,830 ERROR: Exception on /upload [GET] [in d:\py\vd\lib\site-packages\flask\app.py:1454]
+Traceback (most recent call last):
+  File "d:\py\vd\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "d:\py\vd\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "d:\py\vd\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "d:\py\vd\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "D:\py\vD\app\routes.py", line 236, in uploaddd
+    files = os.listdir(app.config['UPLOAD_PATH'])
+FileNotFoundError: [WinError 3] Системе не удается найти указанный путь: 'static'
+2021-10-14 10:47:03,107 INFO: Microblog startup [in D:\py\vD\app\__init__.py:57]
+2021-10-14 11:11:47,372 INFO: Microblog startup [in D:\py\vD\app\__init__.py:57]
+2021-10-14 11:11:48,971 ERROR: Exception on /upload [GET] [in d:\py\vd\lib\site-packages\flask\app.py:1454]
+Traceback (most recent call last):
+  File "d:\py\vd\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "d:\py\vd\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "d:\py\vd\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "d:\py\vd\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "D:\py\vD\app\routes.py", line 237, in uploaddd
+    return render_template('upload.html', files=files)
+  File "d:\py\vd\lib\site-packages\flask\templating.py", line 147, in render_template
+    return _render(
+  File "d:\py\vd\lib\site-packages\flask\templating.py", line 128, in _render
+    rv = template.render(context)
+  File "d:\py\vd\lib\site-packages\jinja2\environment.py", line 1304, in render
+    self.environment.handle_exception()
+  File "d:\py\vd\lib\site-packages\jinja2\environment.py", line 925, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "D:\py\vD\app\templates\upload.html", line 2, in top-level template code
+    {% import 'bootstrap/wtf.html' as wtf %}
+  File "D:\py\vD\app\templates\base.html", line 1, in top-level template code
+    {% extends 'bootstrap/base.html' %}
+  File "d:\py\vd\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 1, in top-level template code
+    {% block doc -%}
+  File "d:\py\vd\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 4, in block 'doc'
+    {%- block html %}
+  File "d:\py\vd\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 21, in block 'html'
+    {% block body -%}
+  File "d:\py\vd\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 24, in block 'body'
+    {% block content -%}
+  File "D:\py\vD\app\templates\base.html", line 52, in block 'content'
+    {% block app_content %}{% endblock %}
+  File "D:\py\vD\app\templates\upload.html", line 12, in block 'app_content'
+    <img src="{{ url_for('app\static', filename='qwe.gif') }}">
+  File "d:\py\vd\lib\site-packages\flask\helpers.py", line 338, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "d:\py\vd\lib\site-packages\flask\helpers.py", line 325, in url_for
+    rv = url_adapter.build(
+  File "d:\py\vd\lib\site-packages\werkzeug\routing.py", line 2305, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'app\\static' with values ['filename']. Did you mean 'static' instead?
+2021-10-14 11:12:08,840 INFO: Microblog startup [in D:\py\vD\app\__init__.py:57]
+2021-10-14 11:15:41,678 INFO: Microblog startup [in D:\py\vD\app\__init__.py:57]
+2021-10-14 12:25:56,949 INFO: Microblog startup [in D:\py\vD\app\__init__.py:57]
+2021-10-14 12:26:50,613 INFO: Microblog startup [in D:\py\vD\app\__init__.py:57]
+2021-10-14 14:07:04,045 INFO: Microblog startup [in D:\py\vD\app\__init__.py:57]
+2021-10-14 14:07:14,530 ERROR: Exception on /upload [GET] [in d:\py\vd\lib\site-packages\flask\app.py:1454]
+Traceback (most recent call last):
+  File "d:\py\vd\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "d:\py\vd\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "d:\py\vd\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "d:\py\vd\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "D:\py\vD\app\routes.py", line 237, in uploaddd
+    return render_template('upload.html', files=files)
+  File "d:\py\vd\lib\site-packages\flask\templating.py", line 147, in render_template
+    return _render(
+  File "d:\py\vd\lib\site-packages\flask\templating.py", line 128, in _render
+    rv = template.render(context)
+  File "d:\py\vd\lib\site-packages\jinja2\environment.py", line 1304, in render
+    self.environment.handle_exception()
+  File "d:\py\vd\lib\site-packages\jinja2\environment.py", line 925, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "D:\py\vD\app\templates\upload.html", line 2, in top-level template code
+    {% import 'bootstrap/wtf.html' as wtf %}
+  File "D:\py\vD\app\templates\base.html", line 1, in top-level template code
+    {% extends 'bootstrap/base.html' %}
+  File "d:\py\vd\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 1, in top-level template code
+    {% block doc -%}
+  File "d:\py\vd\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 4, in block 'doc'
+    {%- block html %}
+  File "d:\py\vd\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 21, in block 'html'
+    {% block body -%}
+  File "d:\py\vd\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 24, in block 'body'
+    {% block content -%}
+  File "D:\py\vD\app\templates\base.html", line 52, in block 'content'
+    {% block app_content %}{% endblock %}
+  File "D:\py\vD\app\templates\upload.html", line 14, in block 'app_content'
+    <img src="{{ url_for('uploads') }}">
+  File "d:\py\vd\lib\site-packages\flask\helpers.py", line 338, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "d:\py\vd\lib\site-packages\flask\helpers.py", line 325, in url_for
+    rv = url_adapter.build(
+  File "d:\py\vd\lib\site-packages\werkzeug\routing.py", line 2305, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'uploads'. Did you forget to specify values ['filename']?
+2021-10-14 14:19:30,935 INFO: Microblog startup [in D:\py\vD\app\__init__.py:57]
+2021-10-14 14:20:33,104 INFO: Microblog startup [in D:\py\vD\app\__init__.py:57]
+2021-10-14 14:23:11,112 INFO: Microblog startup [in D:\py\vD\app\__init__.py:57]
+2021-10-14 14:24:37,449 INFO: Microblog startup [in D:\py\vD\app\__init__.py:57]
+2021-10-14 14:24:49,959 ERROR: Exception on /uploads/qwe.gif [GET] [in d:\py\vd\lib\site-packages\flask\app.py:1454]
+Traceback (most recent call last):
+  File "d:\py\vd\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "d:\py\vd\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "d:\py\vd\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "d:\py\vd\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "D:\py\vD\app\routes.py", line 258, in uploads
+    print(basedir)
+NameError: name 'basedir' is not defined
+2021-10-14 14:25:14,475 INFO: Microblog startup [in D:\py\vD\app\__init__.py:57]
+2021-10-14 14:27:29,840 INFO: Microblog startup [in D:\py\vD\app\__init__.py:57]

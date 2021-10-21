@@ -1,0 +1,143 @@
+2021-09-23 11:23:13,644 ERROR: Exception on /background_process_test [GET] [in d:\py\vd\lib\site-packages\flask\app.py:1454]
+Traceback (most recent call last):
+  File "d:\py\vd\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "d:\py\vd\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "d:\py\vd\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "d:\py\vd\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "d:\py\vd\app\routes.py", line 212, in background_process_test
+    fileway=fd.askopenfilename(title="открыть", initialdir="/")
+  File "c:\users\kharitonov\appdata\local\programs\python\python38\lib\tkinter\filedialog.py", line 376, in askopenfilename
+    return Open(**options).show()
+  File "c:\users\kharitonov\appdata\local\programs\python\python38\lib\tkinter\commondialog.py", line 40, in show
+    w = Frame(self.master)
+  File "c:\users\kharitonov\appdata\local\programs\python\python38\lib\tkinter\__init__.py", line 3124, in __init__
+    Widget.__init__(self, master, 'frame', cnf, {}, extra)
+  File "c:\users\kharitonov\appdata\local\programs\python\python38\lib\tkinter\__init__.py", line 2572, in __init__
+    self.tk.call(
+RuntimeError: main thread is not in main loop
+2021-09-23 11:41:31,285 INFO: Microblog startup [in d:\py\vd\app\__init__.py:57]
+2021-09-23 11:41:52,107 ERROR: Exception on /background_process_test [GET] [in d:\py\vd\lib\site-packages\flask\app.py:1454]
+Traceback (most recent call last):
+  File "d:\py\vd\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "d:\py\vd\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "d:\py\vd\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "d:\py\vd\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "d:\py\vd\app\routes.py", line 213, in background_process_test
+    print(fileway.name)
+AttributeError: 'str' object has no attribute 'name'
+2021-09-23 11:42:20,958 INFO: Microblog startup [in d:\py\vd\app\__init__.py:57]
+2021-09-23 11:42:28,308 ERROR: Exception on /background_process_test [GET] [in d:\py\vd\lib\site-packages\flask\app.py:1454]
+Traceback (most recent call last):
+  File "d:\py\vd\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "d:\py\vd\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "d:\py\vd\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "d:\py\vd\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "d:\py\vd\app\routes.py", line 212, in background_process_test
+    fileway=fd.askopenfile()
+  File "c:\users\kharitonov\appdata\local\programs\python\python38\lib\tkinter\filedialog.py", line 402, in askopenfile
+    return open(filename, mode)
+PermissionError: [Errno 13] Permission denied: 'D:/pagefile.sys'
+2021-09-23 11:43:31,920 ERROR: Exception on /background_process_test [GET] [in d:\py\vd\lib\site-packages\flask\app.py:1454]
+Traceback (most recent call last):
+  File "d:\py\vd\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "d:\py\vd\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "d:\py\vd\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "d:\py\vd\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "d:\py\vd\app\routes.py", line 212, in background_process_test
+    fileway=fd.askopenfile()
+  File "c:\users\kharitonov\appdata\local\programs\python\python38\lib\tkinter\filedialog.py", line 400, in askopenfile
+    filename = Open(**options).show()
+  File "c:\users\kharitonov\appdata\local\programs\python\python38\lib\tkinter\commondialog.py", line 40, in show
+    w = Frame(self.master)
+  File "c:\users\kharitonov\appdata\local\programs\python\python38\lib\tkinter\__init__.py", line 3124, in __init__
+    Widget.__init__(self, master, 'frame', cnf, {}, extra)
+  File "c:\users\kharitonov\appdata\local\programs\python\python38\lib\tkinter\__init__.py", line 2572, in __init__
+    self.tk.call(
+RuntimeError: main thread is not in main loop
+2021-09-23 11:43:37,202 ERROR: Exception on /background_process_test [GET] [in d:\py\vd\lib\site-packages\flask\app.py:1454]
+Traceback (most recent call last):
+  File "d:\py\vd\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "d:\py\vd\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "d:\py\vd\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "d:\py\vd\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "d:\py\vd\app\routes.py", line 212, in background_process_test
+    fileway=fd.askopenfile()
+  File "c:\users\kharitonov\appdata\local\programs\python\python38\lib\tkinter\filedialog.py", line 400, in askopenfile
+    filename = Open(**options).show()
+  File "c:\users\kharitonov\appdata\local\programs\python\python38\lib\tkinter\commondialog.py", line 40, in show
+    w = Frame(self.master)
+  File "c:\users\kharitonov\appdata\local\programs\python\python38\lib\tkinter\__init__.py", line 3124, in __init__
+    Widget.__init__(self, master, 'frame', cnf, {}, extra)
+  File "c:\users\kharitonov\appdata\local\programs\python\python38\lib\tkinter\__init__.py", line 2572, in __init__
+    self.tk.call(
+RuntimeError: main thread is not in main loop
+2021-09-23 11:44:46,905 INFO: Microblog startup [in d:\py\vd\app\__init__.py:57]
+2021-09-23 11:45:05,452 ERROR: Exception on /background_process_test [GET] [in d:\py\vd\lib\site-packages\flask\app.py:1454]
+Traceback (most recent call last):
+  File "d:\py\vd\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "d:\py\vd\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "d:\py\vd\lib\site-packages\flask\app.py", line 1535, in finalize_request
+    response = self.make_response(rv)
+  File "d:\py\vd\lib\site-packages\flask\app.py", line 1698, in make_response
+    raise TypeError(
+TypeError: The view function for 'background_process_test' did not return a valid response. The function either returned None or ended without a return statement.
+2021-09-23 11:46:27,916 INFO: Microblog startup [in d:\py\vd\app\__init__.py:57]
+2021-09-23 11:46:35,820 ERROR: Exception on /background_process_test [GET] [in d:\py\vd\lib\site-packages\flask\app.py:1454]
+Traceback (most recent call last):
+  File "d:\py\vd\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "d:\py\vd\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "d:\py\vd\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "d:\py\vd\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "d:\py\vd\app\routes.py", line 212, in background_process_test
+    fileway=fd.askopenfile()
+  File "c:\users\kharitonov\appdata\local\programs\python\python38\lib\tkinter\filedialog.py", line 402, in askopenfile
+    return open(filename, mode)
+PermissionError: [Errno 13] Permission denied: 'D:/pagefile.sys'
+2021-09-23 11:46:45,120 ERROR: Exception on /background_process_test [GET] [in d:\py\vd\lib\site-packages\flask\app.py:1454]
+Traceback (most recent call last):
+  File "d:\py\vd\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "d:\py\vd\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "d:\py\vd\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "d:\py\vd\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "d:\py\vd\app\routes.py", line 212, in background_process_test
+    fileway=fd.askopenfile()
+  File "c:\users\kharitonov\appdata\local\programs\python\python38\lib\tkinter\filedialog.py", line 400, in askopenfile
+    filename = Open(**options).show()
+  File "c:\users\kharitonov\appdata\local\programs\python\python38\lib\tkinter\commondialog.py", line 40, in show
+    w = Frame(self.master)
+  File "c:\users\kharitonov\appdata\local\programs\python\python38\lib\tkinter\__init__.py", line 3124, in __init__
+    Widget.__init__(self, master, 'frame', cnf, {}, extra)
+  File "c:\users\kharitonov\appdata\local\programs\python\python38\lib\tkinter\__init__.py", line 2572, in __init__
+    self.tk.call(
+RuntimeError: main thread is not in main loop
+2021-09-23 11:47:37,320 INFO: Microblog startup [in d:\py\vd\app\__init__.py:57]

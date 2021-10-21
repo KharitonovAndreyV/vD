@@ -1,0 +1,128 @@
+2021-09-23 10:15:16,716 ERROR: Exception on /background_process_test [GET] [in d:\py\vd\lib\site-packages\flask\app.py:1454]
+Traceback (most recent call last):
+  File "d:\py\vd\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "d:\py\vd\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "d:\py\vd\lib\site-packages\flask\app.py", line 1535, in finalize_request
+    response = self.make_response(rv)
+  File "d:\py\vd\lib\site-packages\flask\app.py", line 1698, in make_response
+    raise TypeError(
+TypeError: The view function for 'background_process_test' did not return a valid response. The function either returned None or ended without a return statement.
+2021-09-23 10:15:58,749 INFO: Microblog startup [in d:\py\vd\app\__init__.py:57]
+2021-09-23 10:16:12,182 ERROR: Exception on /background_process_test [GET] [in d:\py\vd\lib\site-packages\flask\app.py:1454]
+Traceback (most recent call last):
+  File "d:\py\vd\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "d:\py\vd\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "d:\py\vd\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "d:\py\vd\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "d:\py\vd\app\routes.py", line 213, in background_process_test
+    fileway=fd.askopenfilename(title="открыть", initialdir="/")
+  File "c:\users\kharitonov\appdata\local\programs\python\python38\lib\tkinter\filedialog.py", line 376, in askopenfilename
+    return Open(**options).show()
+  File "c:\users\kharitonov\appdata\local\programs\python\python38\lib\tkinter\commondialog.py", line 40, in show
+    w = Frame(self.master)
+  File "c:\users\kharitonov\appdata\local\programs\python\python38\lib\tkinter\__init__.py", line 3124, in __init__
+    Widget.__init__(self, master, 'frame', cnf, {}, extra)
+  File "c:\users\kharitonov\appdata\local\programs\python\python38\lib\tkinter\__init__.py", line 2572, in __init__
+    self.tk.call(
+RuntimeError: main thread is not in main loop
+2021-09-23 10:17:02,378 INFO: Microblog startup [in d:\py\vd\app\__init__.py:57]
+2021-09-23 10:17:11,327 ERROR: Exception on /background_process_test [GET] [in d:\py\vd\lib\site-packages\flask\app.py:1454]
+Traceback (most recent call last):
+  File "d:\py\vd\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "d:\py\vd\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "d:\py\vd\lib\site-packages\flask\app.py", line 1535, in finalize_request
+    response = self.make_response(rv)
+  File "d:\py\vd\lib\site-packages\flask\app.py", line 1727, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The return type must be a string, dict, tuple, Response instance, or WSGI callable, but it was a TextIOWrapper.
+2021-09-23 10:17:38,974 INFO: Microblog startup [in d:\py\vd\app\__init__.py:57]
+2021-09-23 10:17:48,995 ERROR: Exception on /background_process_test [GET] [in d:\py\vd\lib\site-packages\flask\app.py:1454]
+Traceback (most recent call last):
+  File "d:\py\vd\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "d:\py\vd\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "d:\py\vd\lib\site-packages\flask\app.py", line 1535, in finalize_request
+    response = self.make_response(rv)
+  File "d:\py\vd\lib\site-packages\flask\app.py", line 1698, in make_response
+    raise TypeError(
+TypeError: The view function for 'background_process_test' did not return a valid response. The function either returned None or ended without a return statement.
+2021-09-23 10:19:27,019 INFO: Microblog startup [in d:\py\vd\app\__init__.py:57]
+2021-09-23 10:19:36,552 ERROR: Exception on /background_process_test [GET] [in d:\py\vd\lib\site-packages\flask\app.py:1454]
+Traceback (most recent call last):
+  File "d:\py\vd\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "d:\py\vd\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "d:\py\vd\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "d:\py\vd\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "d:\py\vd\app\routes.py", line 211, in background_process_test
+    Print(fd.askopenfilename(title="открыть", initialdir="/"))
+NameError: name 'Print' is not defined
+2021-09-23 10:20:01,721 INFO: Microblog startup [in d:\py\vd\app\__init__.py:57]
+2021-09-23 10:20:20,278 ERROR: Exception on /background_process_test [GET] [in d:\py\vd\lib\site-packages\flask\app.py:1454]
+Traceback (most recent call last):
+  File "d:\py\vd\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "d:\py\vd\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "d:\py\vd\lib\site-packages\flask\app.py", line 1535, in finalize_request
+    response = self.make_response(rv)
+  File "d:\py\vd\lib\site-packages\flask\app.py", line 1698, in make_response
+    raise TypeError(
+TypeError: The view function for 'background_process_test' did not return a valid response. The function either returned None or ended without a return statement.
+2021-09-23 10:22:09,776 INFO: Microblog startup [in d:\py\vd\app\__init__.py:57]
+2021-09-23 10:22:23,197 ERROR: Exception on /background_process_test [GET] [in d:\py\vd\lib\site-packages\flask\app.py:1454]
+Traceback (most recent call last):
+  File "d:\py\vd\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "d:\py\vd\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "d:\py\vd\lib\site-packages\flask\app.py", line 1535, in finalize_request
+    response = self.make_response(rv)
+  File "d:\py\vd\lib\site-packages\flask\app.py", line 1698, in make_response
+    raise TypeError(
+TypeError: The view function for 'background_process_test' did not return a valid response. The function either returned None or ended without a return statement.
+2021-09-23 10:27:25,435 INFO: Microblog startup [in d:\py\vd\app\__init__.py:57]
+2021-09-23 10:27:33,211 ERROR: Exception on /background_process_test [GET] [in d:\py\vd\lib\site-packages\flask\app.py:1454]
+Traceback (most recent call last):
+  File "d:\py\vd\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "d:\py\vd\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "d:\py\vd\lib\site-packages\flask\app.py", line 1535, in finalize_request
+    response = self.make_response(rv)
+  File "d:\py\vd\lib\site-packages\flask\app.py", line 1698, in make_response
+    raise TypeError(
+TypeError: The view function for 'background_process_test' did not return a valid response. The function either returned None or ended without a return statement.
+2021-09-23 10:27:38,083 ERROR: Exception on /background_process_test [GET] [in d:\py\vd\lib\site-packages\flask\app.py:1454]
+Traceback (most recent call last):
+  File "d:\py\vd\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "d:\py\vd\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "d:\py\vd\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "d:\py\vd\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "d:\py\vd\app\routes.py", line 212, in background_process_test
+    fileway=fd.askopenfilename(title="открыть", initialdir="/")
+  File "c:\users\kharitonov\appdata\local\programs\python\python38\lib\tkinter\filedialog.py", line 376, in askopenfilename
+    return Open(**options).show()
+  File "c:\users\kharitonov\appdata\local\programs\python\python38\lib\tkinter\commondialog.py", line 40, in show
+    w = Frame(self.master)
+  File "c:\users\kharitonov\appdata\local\programs\python\python38\lib\tkinter\__init__.py", line 3124, in __init__
+    Widget.__init__(self, master, 'frame', cnf, {}, extra)
+  File "c:\users\kharitonov\appdata\local\programs\python\python38\lib\tkinter\__init__.py", line 2572, in __init__
+    self.tk.call(
+RuntimeError: main thread is not in main loop

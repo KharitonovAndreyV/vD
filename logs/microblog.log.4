@@ -1,0 +1,150 @@
+2021-09-30 15:16:36,040 ERROR: Exception on /upload [GET] [in d:\py\vd\lib\site-packages\flask\app.py:1454]
+Traceback (most recent call last):
+  File "d:\py\vd\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "d:\py\vd\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "d:\py\vd\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "d:\py\vd\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "D:\py\vD\app\routes.py", line 237, in uploaddd
+    return render_template('upload.html', files=files)
+  File "d:\py\vd\lib\site-packages\flask\templating.py", line 147, in render_template
+    return _render(
+  File "d:\py\vd\lib\site-packages\flask\templating.py", line 128, in _render
+    rv = template.render(context)
+  File "d:\py\vd\lib\site-packages\jinja2\environment.py", line 1304, in render
+    self.environment.handle_exception()
+  File "d:\py\vd\lib\site-packages\jinja2\environment.py", line 925, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "D:\py\vD\app\templates\upload.html", line 2, in top-level template code
+    {% import 'bootstrap/wtf.html' as wtf %}
+  File "D:\py\vD\app\templates\base.html", line 1, in top-level template code
+    {% extends 'bootstrap/base.html' %}
+  File "d:\py\vd\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 1, in top-level template code
+    {% block doc -%}
+  File "d:\py\vd\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 4, in block 'doc'
+    {%- block html %}
+  File "d:\py\vd\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 21, in block 'html'
+    {% block body -%}
+  File "d:\py\vd\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 24, in block 'body'
+    {% block content -%}
+  File "D:\py\vD\app\templates\base.html", line 52, in block 'content'
+    {% block app_content %}{% endblock %}
+  File "D:\py\vD\app\templates\upload.html", line 11, in block 'app_content'
+    <img src="{{ url_for('upload', filename='qwe.gif') }}">
+  File "d:\py\vd\lib\site-packages\flask\helpers.py", line 338, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "d:\py\vd\lib\site-packages\flask\helpers.py", line 325, in url_for
+    rv = url_adapter.build(
+  File "d:\py\vd\lib\site-packages\werkzeug\routing.py", line 2305, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'upload' with values ['filename']. Did you mean 'uploaddd' instead?
+2021-09-30 15:17:10,134 ERROR: Exception on /upload [GET] [in d:\py\vd\lib\site-packages\flask\app.py:1454]
+Traceback (most recent call last):
+  File "d:\py\vd\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "d:\py\vd\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "d:\py\vd\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "d:\py\vd\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "D:\py\vD\app\routes.py", line 237, in uploaddd
+    return render_template('upload.html', files=files)
+  File "d:\py\vd\lib\site-packages\flask\templating.py", line 147, in render_template
+    return _render(
+  File "d:\py\vd\lib\site-packages\flask\templating.py", line 128, in _render
+    rv = template.render(context)
+  File "d:\py\vd\lib\site-packages\jinja2\environment.py", line 1304, in render
+    self.environment.handle_exception()
+  File "d:\py\vd\lib\site-packages\jinja2\environment.py", line 925, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "D:\py\vD\app\templates\upload.html", line 2, in top-level template code
+    {% import 'bootstrap/wtf.html' as wtf %}
+  File "D:\py\vD\app\templates\base.html", line 1, in top-level template code
+    {% extends 'bootstrap/base.html' %}
+  File "d:\py\vd\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 1, in top-level template code
+    {% block doc -%}
+  File "d:\py\vd\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 4, in block 'doc'
+    {%- block html %}
+  File "d:\py\vd\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 21, in block 'html'
+    {% block body -%}
+  File "d:\py\vd\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 24, in block 'body'
+    {% block content -%}
+  File "D:\py\vD\app\templates\base.html", line 52, in block 'content'
+    {% block app_content %}{% endblock %}
+  File "D:\py\vD\app\templates\upload.html", line 11, in block 'app_content'
+    <img src="{{ url_for('upload', filename='qwe.gif') }}">
+  File "d:\py\vd\lib\site-packages\flask\helpers.py", line 338, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "d:\py\vd\lib\site-packages\flask\helpers.py", line 325, in url_for
+    rv = url_adapter.build(
+  File "d:\py\vd\lib\site-packages\werkzeug\routing.py", line 2305, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'upload' with values ['filename']. Did you mean 'uploaddd' instead?
+2021-09-30 15:17:27,058 ERROR: Exception on /upload [GET] [in d:\py\vd\lib\site-packages\flask\app.py:1454]
+Traceback (most recent call last):
+  File "d:\py\vd\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "d:\py\vd\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "d:\py\vd\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "d:\py\vd\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "D:\py\vD\app\routes.py", line 237, in uploaddd
+    return render_template('upload.html', files=files)
+  File "d:\py\vd\lib\site-packages\flask\templating.py", line 147, in render_template
+    return _render(
+  File "d:\py\vd\lib\site-packages\flask\templating.py", line 128, in _render
+    rv = template.render(context)
+  File "d:\py\vd\lib\site-packages\jinja2\environment.py", line 1304, in render
+    self.environment.handle_exception()
+  File "d:\py\vd\lib\site-packages\jinja2\environment.py", line 925, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "D:\py\vD\app\templates\upload.html", line 2, in top-level template code
+    {% import 'bootstrap/wtf.html' as wtf %}
+  File "D:\py\vD\app\templates\base.html", line 1, in top-level template code
+    {% extends 'bootstrap/base.html' %}
+  File "d:\py\vd\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 1, in top-level template code
+    {% block doc -%}
+  File "d:\py\vd\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 4, in block 'doc'
+    {%- block html %}
+  File "d:\py\vd\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 21, in block 'html'
+    {% block body -%}
+  File "d:\py\vd\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 24, in block 'body'
+    {% block content -%}
+  File "D:\py\vD\app\templates\base.html", line 52, in block 'content'
+    {% block app_content %}{% endblock %}
+  File "D:\py\vD\app\templates\upload.html", line 11, in block 'app_content'
+    <img src="{{ url_for('upload', filename='qwe.gif') }}">
+  File "d:\py\vd\lib\site-packages\flask\helpers.py", line 338, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "d:\py\vd\lib\site-packages\flask\helpers.py", line 325, in url_for
+    rv = url_adapter.build(
+  File "d:\py\vd\lib\site-packages\werkzeug\routing.py", line 2305, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'upload' with values ['filename']. Did you mean 'uploaddd' instead?
+2021-09-30 15:18:05,367 INFO: Microblog startup [in D:\py\vD\app\__init__.py:57]
+2021-09-30 15:53:44,789 INFO: Microblog startup [in D:\py\vD\app\__init__.py:57]
+2021-09-30 16:26:15,628 INFO: Microblog startup [in D:\py\vD\app\__init__.py:57]
+2021-09-30 16:46:57,004 INFO: Microblog startup [in D:\py\vD\app\__init__.py:57]
+2021-09-30 17:01:03,688 INFO: Microblog startup [in D:\py\vD\app\__init__.py:57]
+2021-09-30 17:09:14,204 INFO: Microblog startup [in D:\py\vD\app\__init__.py:57]
+2021-09-30 17:09:22,038 ERROR: Exception on /upload [GET] [in d:\py\vd\lib\site-packages\flask\app.py:1454]
+Traceback (most recent call last):
+  File "d:\py\vd\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "d:\py\vd\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "d:\py\vd\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "d:\py\vd\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "D:\py\vD\app\routes.py", line 236, in uploaddd
+    files = os.listdir(app.config['UPLOAD_PATH'])
+FileNotFoundError: [WinError 3] Системе не удается найти указанный путь: 'static'
+2021-10-08 08:45:16,853 INFO: Microblog startup [in D:\py\vD\app\__init__.py:57]
+2021-10-13 10:32:30,069 INFO: Microblog startup [in D:\py\vD\app\__init__.py:57]
